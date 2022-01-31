@@ -28,7 +28,7 @@ int main()
             if(v[i].second>maxtime)
                 maxtime=v[i].second;
         }
-        int fill[maxtime];
+        int *fill = new int[maxtime];
         int count=0,maxProfit=0;
 
         for(int i=0;i<maxtime;i++)
